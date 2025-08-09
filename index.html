@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <title>LeetCode Last 7 Days Solved</title>
+  </head>
+  <body>
+    <h2>LeetCode Last 7 Days Problem Tracker</h2>
+
+    <div class="input-container">
+      <input type="text" id="username" placeholder="Enter LeetCode Username" />
+      <button onclick="fetchLeetCodeData()">Get Data</button>
+    </div>
+
+    <!-- Loading Spinner -->
+    <div id="loading" class="loading" style="display: none">
+      <div class="spinner"></div>
+      <p>Fetching data, please wait...</p>
+    </div>
+
+    <!-- Stats -->
+    <div id="stats" class="stats-container" style="display: none"></div>
+
+    <!-- Problems Table -->
+    <div id="problems-container" style="display: none">
+      <table>
+        <thead>
+          <tr>
+            <th>Problem Name</th>
+            <th>Difficulty</th>
+            <th>Language</th>
+            <th>Time</th>
+            <th>Points</th>
+          </tr>
+        </thead>
+        <tbody id="problems-table"></tbody>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
